@@ -137,7 +137,8 @@ ReactDOM.render(
 	// otherwise, probably something like:
 	// dispatcher(this.props.actionCreator());
 export default connect(mapStateToProps, mapDispatchToProps)(Component);
-
+// basically connect just creates a new Component
+// with new props that you specify
 
 // implementation 2 seems better because you can specifiy which
 // store.state props you want a component to "subscribe" to
